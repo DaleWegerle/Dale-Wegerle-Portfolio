@@ -1,0 +1,284 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dale Wegerle, Freelance Graphic Designer and Front Web Portfolio">
+    <meta name="keywords" content="Web Developer Website, Freelance, Freelance Graphic Design, Front End Developer, Portfolio Website">
+    <meta name="author" content="Dale Wegerle">
+
+    <title>Dale's Portfolio</title>
+    <link rel="icon" href="images/intro/logo-white.png">
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="noframework.waypoints.min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W16ZSK5C6K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-W16ZSK5C6K');
+    </script>
+
+</head>
+
+<body>
+    <img id="menuOpen" src="images/menu-icon-per.png" onclick="menuOpen()" alt="">
+    <div id="menu">
+        <img id="menuClose" src="images/close-icon-per.png" onclick="menuClose()" alt="">
+        <div id="menuContent">
+            <h1><a href="#about" onclick="menuClose()">about.</a></h1>
+            <h1><a href="#skills" onclick="menuClose()">skills.</a></h1>
+            <h1><a href="#work" onclick="menuClose()">work.</a></h1>
+            <h1><a href="#contact" onclick="menuClose()">contact.</a></h1>
+        </div>
+    </div>
+
+    <div id="intro" class="parallax">
+        <div id="introContent">
+            <nav>
+                <img id="logo" src="images/intro/logo-white.png" alt="">
+            </nav>
+            <div id="introContentName">
+                <h1><span class="highlight">DALE</span>WEGERLE.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="parallax">
+        <div class="aboutContentLeft"></div>
+        <div class="aboutContent">
+            <h1>THIS IS ME.</h1>
+             <p>I have over 10 years of experience graphic designing for the print, media and advertising
+                industries. In 2018 I decided to apply my design skills to a more interactive platform, naturally I
+                started my web design journey. Through years of conceptual design I have developed a keen
+                eye for detail and I have always had a knack for problem solving and developing design systems. 
+                These traits lend themselves
+                well to the pursuit of clean, functional, intuitive and beautiful web application development. I have a
+                passion for making every user interaction meaningful and memorable by using and
+                implementing the latest in user experience methodologies. The last three years have been
+                challenging, but I wouldn't trade it for anything. I look forward to learning and growing in this,
+                my chosen field.
+            </p>
+        </div>
+    </div>
+
+    <div id="skills" class="parallax skills">
+        <div class="skillsContent">
+            <h1>MY SKILLS.</h1>
+            <div class="graph-cont">
+                <p class="barTitle">Adobe <span style="color: #ffffff;"> (Ilustrator, Photoshop, Indesign)</span></p>
+                <div class="barWait bar1"><span style="z-index: 999;">90%</span></div>
+                <p class="barTitle">Figma</p>
+                <div class="barWait bar2"><span style="z-index: 999;">90%</span></div>
+                <p class="barTitle">Github</p>
+                <div class="barWait bar3"><span style="z-index: 999;">70%</span></div>
+                <p class="barTitle">HTML 5</p>
+                <div class="barWait bar4"><span style="z-index: 999;">80%</span></div>
+                <p class="barTitle">CSS 3</p>
+                <div class="barWait bar5"><span style="z-index: 999;">75%</span></div>
+                <p class="barTitle">Javascript</p>
+                <div class="barWait bar6"><span style="z-index: 999;">60%</span></div>
+                <p class="barTitle">Bootstrap</p>
+                <div class="barWait bar7"><span style="z-index: 999;">60%</span></div>
+                <p class="barTitle">Wordpress</p>
+                <div class="barWait bar8"><span style="z-index: 999;">50%</span></div>
+                <p class="barTitle">MERN Stack <span style="color: #ffffff;">(MondoDB, Express, React, Node)</span></p>
+                <div class="barWait bar9 infinite"><span style="z-index: 999;">LOADING...</span></div>
+            </div>
+        </div>
+        <div class="skillsContentRight">
+            <lottie-player class="rocketItself" src="https://assets1.lottiefiles.com/packages/lf20_venqpuib.json"  background="transparent"  speed="1"  loop autoplay alt="Pink Rocket"></lottie-player>
+        </div>
+    </div>
+
+    <div id="work" class="parallax">
+        <div class="workContent">
+            <h1>MY WORK.</h1>   
+        </div>
+        <div class="workContent">
+            <h2><a href="work/Space/index.html" target="blank">Space</a></h2><h2><a href="work/Dine/index.html" target="blank">Dine</a></h2><h2><a href="work/PhotoSnap/index.html" target="blank">PhotoSnap</a></h2><h2><a href="work/Room/index.html" target="blank">Room</a></h2><br>
+            <h2><a href="work/Splitter/index.html" target="blank">Splitter</a></h2><h2><a href="work/SunnySide/index.html" target="blank">SunnySide</a></h2><h2><a href="work/TODO/index.html" target="blank">ToDo</a></h2><br>
+            <h2><a href="work/Huddle/index.html" target="blank">Huddle</a></h2><h2><a href="work/Fylo/index.html" target="blank">Fylo</a></h2><hr><h2><a href="work/Fylo/index.html" target="blank">GraphicDesign</a></h2>  
+        </div>
+    </div>
+
+    <div id="contact" class="parallax">
+        <div class="contactContent">
+            <h1> 
+               <span style="color: #aeedff;">SAY HI.</span><br>
+               <span style="color: #FFCEE1;">LEAVE A NOTE.</span> 
+            </h1>  
+            <p>Please contact me with your feedback, if you would like to do business or collaborate I will contact you via email
+               or whichever contact information you choose to leave in the message section of this contact form. Please do not send me 
+               any spam or adverts of any kind. I appreciate the time you took to visit my portfolio. 
+            </p>
+        </div>
+        <form action="POST" data-netlify="true">
+            <div class="contactForm">
+                <input name="name" id="name" type="text" placeholder="name" required><input name="email" id="email" type="email" placeholder="email" required>
+                <textarea name="message" id="message" cols="30" rows="12" placeholder="message"></textarea>
+                <div id="recaptcha" data-netlify-recaptcha="true"></div>
+                <input type="submit" value="submit" id="submit">
+            </div>
+        </form>
+    </div>
+
+    <script>
+
+    
+    
+    function menuOpen(){
+    var screen = window.innerWidth;
+        if(screen <= 768){
+            document.getElementById("menu").style.height = "100%";
+            document.getElementById("menuOpen").style.display = "none";
+            document.getElementById("menuClose").style.display = "block";
+        }
+        else{
+        document.getElementById("menu").style.width = "50%";
+        document.getElementById("menuOpen").style.display = "none";
+        document.getElementById("menuClose").style.display = "block";
+        }
+    }
+    
+    function menuClose(){
+        var screen = window.innerWidth;
+        if(screen <= 768){
+            document.getElementById("menu").style.height = "0%";
+            document.getElementById("menuOpen").style.display = "block";
+            document.getElementById("menuClose").style.display = "none";
+        }
+        else{
+        document.getElementById('menu').style.width = "0%";
+        document.getElementById("menuClose").style.display = "none";
+        document.getElementById("menuOpen").style.display = "block";
+        }
+    }
+
+    
+   
+
+    // Get the modal
+    var menu = document.getElementById('menu');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == menu) {
+        menu.style.width = "0%";
+      }
+    }
+
+    $(document).ready(function(){
+
+    var waypoint = new Waypoint({
+
+        element: document.getElementById('skills'),
+        handler: function(direction) {
+          $(".barWait").addClass("bar");
+        },
+        offset: 200
+      });
+    }); 
+    
+    (function() {
+    // Add event listener
+    document.addEventListener("mousemove", parallax);
+    const elem = document.querySelector("#intro");
+    // Magic happens here
+    function parallax(e) {
+        let _w = window.innerWidth/2;
+        let _h = window.innerHeight/2;
+        let _mouseX = e.clientX;
+        let _mouseY = e.clientY;
+        let _depth1 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+        let _depth2 = `${50 - (_mouseX - _w) * 0.04}% ${50 - (_mouseY - _h) * 0.04}%`;
+        let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+        let _depth4 = `${50 - (_mouseX - _w) * 0.1}% ${50 - (_mouseY - _h) * 0.1}%`;
+        
+        let x = `${_depth4}, ${_depth3}, ${_depth2}, ${_depth1}`;
+        console.log(x);
+        elem.style.backgroundPosition = x;
+    }
+    })();
+
+    (function() {
+    // Add event listener
+    document.addEventListener("mousemove", parallax);
+    const elem = document.querySelector("#about");
+    // Magic happens here
+    function parallax(e) {
+        let _w = window.innerWidth/2;
+        let _h = window.innerHeight/2;
+        let _mouseX = e.clientX;
+        let _mouseY = e.clientY;
+        let _depth1 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+        let _depth2 = `${50 - (_mouseX - _w) * 0.04}% ${50 - (_mouseY - _h) * 0.04}%`;
+        let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+        let _depth4 = `${50 - (_mouseX - _w) * 0.1}% ${50 - (_mouseY - _h) * 0.1}%`;
+        let _depth5 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+        
+        let x = `${_depth5}, ${_depth4}, ${_depth3}, ${_depth2}, ${_depth1}`;
+        console.log(x);
+        elem.style.backgroundPosition = x;
+    }
+    })();
+
+    (function() {
+    // Add event listener
+    document.addEventListener("mousemove", parallax);
+    const elem = document.querySelector("#skills");
+    // Magic happens here
+    function parallax(e) {
+        let _w = window.innerWidth/2;
+        let _h = window.innerHeight;
+        let _mouseY = e.clientX;
+        let _mouseX = e.clientY;
+        let _depth1 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+        let _depth2 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+        let _depth3 = `${50 - (_mouseX - _w) * 0.08}% ${50 - (_mouseY - _h) * 0.08}%`;
+
+        
+        let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+        console.log(x);
+        elem.style.backgroundPosition = x;
+    }
+    })();
+
+    (function() {
+    // Add event listener
+    document.addEventListener("mousemove", parallax);
+    const elem = document.querySelector("#work");
+    // Magic happens here
+    function parallax(e) {
+        let _w = window.innerWidth/2;
+        let _h = window.innerHeight/2;
+        let _mouseX = e.clientX;
+        let _mouseY = e.clientY;
+        let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+        let _depth2 = `${50 - (_mouseX - _w) * 0.015}% ${50 - (_mouseY - _h) * 0.015}%`;
+        let _depth3 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+        let _depth4 = `${50 - (_mouseX - _w) * 0.025}% ${50 - (_mouseY - _h) * 0.025}%`;
+        let _depth5 = `${50 - (_mouseX - _w) * 0.03}% ${50 - (_mouseY - _h) * 0.03}%`;
+        let _depth6 = `${50 - (_mouseX - _w) * 0.035}% ${50 - (_mouseY - _h) * 0.035}%`;
+        let _depth7 = `${50 - (_mouseX - _w) * 0.04}% ${50 - (_mouseY - _h) * 0.04}%`;
+        let _depth8 = `${50 - (_mouseX - _w) * 0.045}% ${50 - (_mouseY - _h) * 0.045}%`;
+
+        let x = `${_depth8}, ${_depth7}, ${_depth6}, ${_depth5}, ${_depth4}, ${_depth3}, ${_depth2}, ${_depth1}`;
+        console.log(x);
+        elem.style.backgroundPosition = x;
+    }
+    })();
+    
+    </script>
+</body>
+</html>

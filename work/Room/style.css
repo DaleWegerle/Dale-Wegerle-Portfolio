@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+
+p{
+    margin-top: 30px;
+    color: #8b8b8b;
+    line-height: 22px;
+}
+
+h2{
+    font-size: 16px;
+    margin-top: 30px;
+    color: #8b8b8b;
+    letter-spacing: 12px;
+    font-weight: 500;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 12px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#topNav{
+    width: 55%;
+    max-width: 900px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    z-index: 999;
+}
+
+.navItem{
+    margin-top: 30px;
+    margin-left: 3vw;
+    box-sizing: border-box;
+}
+
+.navItem a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: 10px;
+    border-bottom: 0px ;
+}
+
+.navItem a:hover{
+    border-bottom: 2px #ffffff solid;
+    transition: border-bottom 0.5s ease-in;
+}
+
+#top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#topImage{
+    background-size: cover;
+    background-color: #444444;
+    width: 55%;
+    max-width: 900px;
+    height: 65vh; 
+    position: relative;  
+}
+
+#topInfo{
+    width: 45%;
+    min-width: 600px;
+    height: 65vh;
+    background-color: #ffffff;
+    padding: 80px;
+    position: relative;
+}
+
+#arrowNavMobile{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+}
+
+#arrowNav{
+    width: 100px;
+    height: 50px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.arrow{
+    width: 50%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.arrow:hover{
+    cursor: pointer;
+    background-color: #444444;
+
+}
+
+.info-1{
+    position: absolute;
+    visibility: hidden;
+}
+
+.info-2{
+    position: absolute;
+    visibility: hidden;
+}
+
+.info-3{
+    position: absolute;
+    visibility: hidden;
+}
+
+#bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h3{
+    letter-spacing: 5px;
+}
+
+#leftImage{
+    width: 30%;
+    height: 35vh;
+    background-color: grey;
+    background-image: url("images/image-about-dark.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#bottomInfo{
+    width: 40%;
+    height: 35vh;
+    background-color: #ffffff;
+    padding: 40px;
+    overflow: scroll;
+}
+
+#rightImage{
+    width: 30%;
+    height: 35vh;
+    background-color: grey;
+    background-image: url("images/image-about-light.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+@media only screen and (max-width: 993px) {
+
+.navItem{
+    width: 50%;
+}
+}
+
+@media only screen and (max-width: 768px){
+#topNav{
+    width: 100%;
+    background-color: #000000;
+}
+
+.navItem{
+    width: unset;
+    margin-bottom: 30px;
+    margin-left: 8vw;
+}
+
+.navItem:first-of-type{
+    margin-left: 6vw;
+}
+
+#top{
+    flex-direction: column;
+}
+
+#topImage{
+    width: 100%;
+}
+
+#topInfo{
+    width: 100%; 
+    min-width: unset;
+    height: auto;
+    padding: 40px 40px 80px 40px;
+}
+
+#arrowNav{
+    left: calc(50% - 50px);
+}
+
+#bottom{
+    flex-wrap: wrap;
+}
+
+#leftImage{
+    width: 50%;
+}
+
+#bottomInfo{
+    width: 50%;
+    padding: 25px;
+}
+
+#rightImage{
+    width: 100%;
+    height: 50vw;
+    
+}
+
+}
+
+@media only screen and (max-width: 425px){
+
+#leftImage{
+    width: 100%;
+}
+    
+#bottomInfo{
+    width: 100%;
+    padding: 25px;
+    height: auto;
+}
+}
+/*
+*/

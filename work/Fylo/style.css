@@ -1,0 +1,707 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #181e2a;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h1, h2, h3{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+}
+
+h3{
+    font-size: 20px;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+.navContainer{
+    width: 100%;
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    background-color: #1b2330;
+    z-index: 2;
+
+}
+
+.logoSpace{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.logoSpace img{
+    width: 70%;
+    height: auto;
+}
+
+.linkSpace{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.linkSpace a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 10%;
+}
+
+.bodyContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    background-color: #1b2330;
+    background-image: url("images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+.introImage{
+    width: 80%;
+    margin: auto;
+}
+
+.titleContainer{
+    width: 80%;
+    position: relative;
+    top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titleContainer button{
+    margin-top: 5%;
+    text-decoration: none;
+    background-color: #4cc1d3;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    width: 70%;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.iconContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.iconTile{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.iconTile h3{
+    margin-bottom: 0;
+}
+
+.iconMarginTop{
+    margin-top: 10%;
+}
+
+.productiveContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 40px 0;
+}
+
+.productiveImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.productiveImage img{
+    width: 80%;
+    height: auto;
+    align-self: center;
+    margin-bottom: 10%;
+}
+
+.productiveText{
+    width: 80%;
+    margin-bottom: 10%;
+    
+}
+
+.productiveText a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #6fddde;
+}
+
+.testiContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0 40px 0;
+}
+
+.testiCard{
+    background-color: #21293c;
+    width: 80%;
+    border-radius: 10px;
+    padding: 5%;
+    margin-bottom: 10%;
+}
+
+.testiProfile{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePic{
+    width:15%;
+}
+
+.profileDetails{
+    width: 85%;
+    padding-left: 10%;
+}
+
+.testiProfile img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.testiCard p{
+    font-size: 15px;
+}
+
+
+.hardBackground{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer{
+    width: 100%;
+    height: 500px;
+    background-color: #0c1524;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundDark{
+    width: 2000px;
+    height: 300px;
+    background-color: #181e2a;
+    position: relative;
+    top: -150px;
+}
+
+.formCard{
+    width: 70%;
+    padding: 5%;
+    background-color: #1b2330;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px black;
+}
+
+.formCard h1{
+    text-align: center;
+}
+
+.formCard p{
+    text-align: center;
+}
+
+.getStartedForm{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formCard input[type=text]{
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 5%;
+    border-radius: 25px;
+}
+.formCard input[type=button]{
+    text-decoration: none;
+    background-color: #4cc1d3;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+
+
+.footerPrac{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c1524;
+}
+
+.footerPracContainer{
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.cell1{
+    width: 100%;
+    padding: 10px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.cell1 img{
+    width: 150px;
+}
+.cell2{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 30px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.cell2 img{
+    width: 15px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.cell2 p{
+    align-self: flex-start;
+    margin: 0;
+}
+.cell3{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.cell3 .phone{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.cell3 .phone img{
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.cell3 .phone p{
+    align-self: flex-start;
+    margin: 0;
+}
+
+.cell3 .email{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.cell3 .email img{
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.cell3 .email p{
+    align-self: flex-start;
+    margin: 0;
+}
+
+.cell4{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.cell4 a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+}
+.cell5{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.cell5 a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+}
+.cell6{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+ion-icon{
+    width: 25px;
+    height: 25px;
+}
+
+@media screen and (min-width: 600px){
+
+    .logoSpace img{
+        max-width: 150px;
+
+    }
+
+    .introImage{
+        padding: 20% 10% 10% 10%;
+    }
+    .headerImage{
+        height: 700px;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    h1{
+        font-size: 40px;
+    }
+    
+   
+
+    .bodyContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .navContainer{
+        padding: 2%;
+    }
+
+    .logoSpace img{
+        width: 20%;
+        height: auto;
+        min-width: 150px;
+    }
+
+    .headerImage{
+        height: 1000px;
+        background-image: url("images/bg-curvy-desktop.svg");
+    }
+
+    .introImage{
+        width: 50%;
+        min-width: 600px;
+        margin: auto;
+        padding: 0;
+    }
+
+    .titleContainer{
+        width: 50%;
+        margin: auto;
+    }
+
+    .titleContainer{
+        top: -150px;
+    }
+
+    .titleContainer button{
+        width: 50%;
+    }
+
+    .iconContainer{
+        width: 70%;
+        padding-top: 0;
+        display: flex;
+        flex-direction: unset;
+        flex-wrap: wrap;
+        align-items: baseline;
+        padding-bottom: 10%;
+    }
+
+    .iconTile{
+        width: 40%;
+        margin: 25px;
+    }
+
+    .productiveContainer{
+        flex-direction: row;
+        margin-bottom: 10%;
+    }
+
+    .productiveImage{
+        width: 40%;
+    }
+
+    .productiveImage img{
+        width: 80%;
+        height: auto;  
+    }
+
+    .productiveText{
+        width: 40%;
+    }
+
+    .productiveText h2{
+        font-size: 40px;
+    }
+
+    .testiContainer{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 90%;
+        margin-bottom: 10%;
+    }
+
+    .testiCard{
+        width: 25%;
+        padding: 2%;
+    }
+
+    .formCard{
+        width: 60%;
+        padding: 2%;
+    }
+
+    .getStartedForm{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .formCard input[type=text]{
+        width: 60%;
+        padding: 15px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 20px;
+    }
+
+    .formCard input[type=button]{
+        width: 30%;
+        padding: 15px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .footerPrac{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0c1524;
+    }
+
+    .footerPracContainer{
+        width: 90%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+
+    .cell1{
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+    }
+
+    .cell1 img{
+        width: 150px;
+    }
+    .cell2{
+        box-sizing: border-box;
+        width: 40%;
+        padding: 10px 30px 10px 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .cell2 img{
+        width: 15px;
+        height: 20px;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    .cell2 p{
+        align-self: flex-start;
+        margin: 0;
+    }
+    .cell3{
+        width: 20%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .cell3 .phone{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-bottom: 10px;
+    }
+
+    .cell3 .phone img{
+        width: 20px;
+        height: 15px;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    .cell3 .phone p{
+        align-self: flex-start;
+        margin: 0;
+    }
+
+    .cell3 .email{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .cell3 .email img{
+        width: 20px;
+        height: 15px;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    .cell3 .email p{
+        align-self: flex-start;
+        margin: 0;
+    }
+
+    .cell4{
+        width: 10%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .cell4 a{
+        text-decoration: none;
+        color: #ffffff;
+        margin-bottom: 10px;
+        font-size: 18px;
+
+    }
+    .cell5{
+        width: 10%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .cell5 a{
+        text-decoration: none;
+        color: #ffffff;
+        margin-bottom: 10px;
+        font-size: 18px;
+
+    }
+    .cell6{
+        width: 20%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+    }
+
+    ion-icon{
+        width: 20px;
+        height: 20px;
+    }
+    
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Dale Wegerle, Freelance Graphic Designer and Front Web Portfolio">
+  <meta name="keywords" content="Web Developer Website, Freelance, Freelance Graphic Design, Front End Developer, Portfolio Website">
+  <meta name="author" content="Dale Wegerle">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Splitter</title>
+</head>
+
+<body>
+  <div class="logoContainer">
+    <img src="images/logo.svg" alt="Splitter Logo">
+  </div>  
+
+  <div class="formContainer">
+    <div class="formBlock input">
+
+      <section class="billContainer">
+        <label for="bill">Bill</label><br>
+        <input type="text" name="bill" id="billInput">
+      </section>  
+
+      <section class="buttonContainer">
+          <label for="buttons" id="tip">Select Tip %</label><br>
+          <button class="tipButton" value="5%" onclick="addTip(0.05, 0)">5%</button>
+          <button class="tipButton" value="10%" onclick="addTip(0.1,1)">10%</button>
+          <button class="tipButton" value="15%" onclick="addTip(0.15,2)">15%</button>
+          <button class="tipButton" value="25%" onclick="addTip(0.25,3)">25%</button>
+          <button class="tipButton" value="50%" onclick="addTip(0.5,4)">50%</button>
+          <!--<input id="customInput" type="text" name="custom" value="custom" placeholder="custom">-->
+      </section> 
+      
+      <section class="peopleContainer">
+        <label for="people">Number Of People</label><br>
+        <input type="text" name="people" id="peopleInput" onkeyup="getPax()">
+      </section>  
+      
+    </div>
+
+    <div class="formBlock output">
+
+      <section class="outputSection">
+        <div class="tipTitle">
+          <p>Tip Amount<br><span>/ person</span></p>
+        </div>
+        <div class="tipOutput">
+          <h1>$00.00</h1>
+        </div>
+      </section>
+
+      <section class="outputSection">
+        <div class="tipTitle">
+          <p>Total<br><span>/ person</span></p>
+        </div>
+        <div class="tipOutput">
+          <h1>$00.00</h1>
+        </div>
+      </section>
+
+      <section>
+        <button id="calculateButton" onclick="calculateTip()">CALCULATE</button>
+        <button id="resetButton" onclick="reset()">RESET</button>
+      </section>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
